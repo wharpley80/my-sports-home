@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar sidebar-offcanvas" id="home-side">
+<div class="col-md-3 sidebar sidebar-offcanvas">
 
 	<?php if (!dynamic_sidebar('blog')): ?>
 
@@ -6,4 +6,5 @@
 		<p>Please add widgets to blog sidebar to have them display here.</p>
 
 	<?php endif; ?>
+	
 </div>

@@ -6,4 +6,5 @@
 		<p>Please add widgets to page sidebar to have them display here.</p>
 
 	<?php endif; ?>
+	
 </div>

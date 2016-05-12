@@ -11,11 +11,56 @@ Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, 
 
 body {
 	padding-top: 50px;
-	/*padding-bottom: 20px;*/
+	background-color: #000;
+}
+
+h1,
+h2,
+h3 {
+	color: #fff;
+}
+
+@media (max-width:768px) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		padding-top: 20px;
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: .5em;
+	}
+
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
 }
 
 a {
-	color: gray;
+	color: #a3adaf;
+}
+
+a:hover {
+	color: #000;
+}
+
+ul {
+	color: #a3adaf;
 }
 
 .row {
@@ -25,20 +70,38 @@ a {
 }
 
 #home-cont {
-	margin-top: -5px;
-	width: 75%;
+	padding-left: 0;
+	padding-right: 10px;
 	height: 600px;
-  padding-top: 2.5em;
-  background: url(http://localhost/my-sports-home/wp-content/themes/mysportshome/images/DSC_0501.JPG) no-repeat;
-  background-size: 100% 100%;
   text-align: center;
+  margin: 30px 0 40px 0;
+}
+
+#home-cont img {
+	width: 100%;
+	height: 100%;
+}
+
+#home-cont p {
+	color: #fff;
 }
 
 @media (max-width:990px) {
 
 	#home-cont {
+		height: 500px;
 		width: 100%;
-		margin-top: -15px;
+		padding-right: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media (max-width:768px) {
+
+	#home-cont {
+		height: 300px;
 	}
 
 }
@@ -100,39 +163,154 @@ a {
 *****************************/
 
 .sidebar {
-	/*margin-top: 40px;*/
+	height: 530px;
+	margin-top: 30px;
+	background-color: #433c85;
 	color: #fff;
 }
 
 #home-side {
-	background-color: #433c85;
 	height: 600px;
-	margin-top: -5px;
+	background: linear-gradient(
+      rgba(255, 255, 255, 0.90), 
+      rgba(255, 255, 255, 0.90)
+    ),
+	url(http://www.mysportshome.com/wp-content/uploads/2016/05/laces.jpg);
+	background-size: 100% 100%;
+	color: #000;
+}
+
+#home-side ul {
+	color: #433c85;
+	}
+
+#home-side a {
+	color: #433c85;
+	}
+	
+#home-side a:hover {
+	color: #a3adaf;
+	}
+	
+#home-side h3 {
+	color: #000;
+}
+
+@media (max-width:990px) {
+
+	.sidebar {
+		margin: 0 10px 0 10px;
+		height: 400px;
+	}
+
+	#home-side {
+		height: 700px;
+		margin: 0;
+	}
+
+	#comment {
+		width: 250px;
+	}
+
+}
+
+#widget-left {
+	height: 250px;
+	background: linear-gradient(
+      rgba(67, 60, 133, 0.85), 
+      rgba(67, 60, 133, 0.85)
+    ),
+	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/cargo.jpeg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#widget-left:hover {
+	background: linear-gradient(
+      rgba(67, 60, 133, 0.95), 
+      rgba(67, 60, 133, 0.95)
+    ),
+	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/cargo.jpeg) no-repeat;
+	background-size: 100% 100%;
+}
+
+#widget-center {
+	height: 250px;
+	background: linear-gradient(
+      rgba(163, 173, 175, 0.85), 
+      rgba(163, 173, 175, 0.85)
+    ),
+  url(http://localhost/my-sports-home/wp-content/uploads/2016/05/elliot.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#widget-center:hover {
+	background: linear-gradient(
+      rgba(163, 173, 175, 0.95), 
+      rgba(163, 173, 175, 0.95)
+    ),
+  url(http://localhost/my-sports-home/wp-content/uploads/2016/05/elliot.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#widget-right {
+	height: 250px;
+	background: linear-gradient(
+      rgba(67, 60, 133, 0.85), 
+      rgba(67, 60, 133, 0.85)
+    ),
+	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/story.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+#widget-right:hover {
+	background: linear-gradient(
+      rgba(67, 60, 133, 0.95), 
+      rgba(67, 60, 133, 0.95)
+    ),
+	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/story.jpg) no-repeat;
+  background-size: 100% 100%;
 }
 
 /*****************************
-						BLOG
+				BLOG PAGE
 *****************************/
+
+.page-header {
+	margin-top: 20px;
+}
 
 article.post {
 	margin: 20px 0 40px;
 }
 
-/*****************************
-					IMAGES
-*****************************/
+@media (max-width:767px) {
 
-.featured-image img,
-.ballparks-piece img,
-.ballparks-image img {
-	max-width: 100%;
+	.carousel-indicators {
+		margin-bottom: 0;
+	}
+
 }
 
+/*****************************
+				GALLERY PAGE
+*****************************/
 
+.jumbotron {
+	background: linear-gradient(
+      rgba(163, 173, 175, 0.85), 
+      rgba(163, 173, 175, 0.85)
+    ),
+	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/horseshoe.jpeg) no-repeat;
+	background-size: 100% 100%;
+}
 
 @media (max-width:767px) {
 
-	.ballparks-piece h4 {
+	.jumbotron {
+		height: 350px;
+	}
+
+	.jumbotron h3 {
 		font-size: 1.5em;
 	}
 
@@ -146,14 +324,90 @@ article.post {
 	font-size: 24px;
 	margin-top: 30px;
 	text-align: right;
+	padding: 0;
+}
+
+.prev-next a {
+	padding-right: 10px;
 }
 
 @media (max-width:540px) {
 
 	.prev-next {
-		font-size: 18px;
+		font-size: 14px;
 		margin-top: 15px;
 	}
 
 }
 
+#reading-col {
+	background-color: #fff;
+	padding: 10px 20px 20px 20px;
+}
+
+#reading-col p, h2 {
+	color: #000;
+}
+
+/*****************************
+				ABOUT PAGE
+*****************************/
+
+.about-cont {
+	margin-top: 30px;
+}
+
+/*****************************
+					IMAGES
+*****************************/
+
+.featured-image img,
+.ballparks-piece img,
+.ballparks-image img,
+.bobbleheads-piece img {
+	max-width: 100%;
+}
+
+.bobblehead-image img {
+	max-width: 50%;
+	margin-left: 25%;
+}
+
+@media (max-width:767px) {
+
+	.ballparks-piece h4 {
+		font-size: 1.5em;
+	}
+
+	.bobblehead-image img {
+		max-width: 75%;
+		margin-left: 12.5%;
+
+	}
+
+	.ballparks-image {
+		padding: 0;
+	}
+
+}
+
+.carousel-img {
+	width: 100%;
+	max-height: 450px;
+}
+
+/*****************************
+				BUTTONS
+*****************************/
+
+#submit {
+	background-color: #433c85;
+	border: #a3adaf;
+	color: #fff;
+}
+
+#searchsubmit {
+	background-color: #000;
+	color: #fff;
+	border: #000;
+}
