@@ -396,6 +396,24 @@ article.post {
 	max-height: 450px;
 }
 
+.extra-photos img {
+	max-height: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 90%;
+	margin-left: 5%;
+}
+
+@media (max-width:767px) {
+
+	.extra-photos img {
+		max-height: 100%;
+		max-width: 90%;
+		margin-left: 5%;
+	}
+
+}
+
 /*****************************
 				BUTTONS
 *****************************/
@@ -410,4 +428,24 @@ article.post {
 	background-color: #000;
 	color: #fff;
 	border: #000;
+}
+
+#s {
+	color: 000;
+}
+
+/**************************
+      MODAL
+**************************/
+
+#imagepreview {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-logo {
+	width: 30%;
+	margin-top: -5%;
+	margin-bottom: -5%;
 }
