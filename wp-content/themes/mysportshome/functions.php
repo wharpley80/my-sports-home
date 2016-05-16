@@ -49,6 +49,16 @@ function create_widget( $name, $id, $description ) {
 
 }
 
+function default_comments_on( $data ) {
+    if( $data[ 'post_type' ] == ( 'ballparks' || 'baseballs' || 'bobbleheads' ) ) {
+        $data[ 'comment_status' ] = 'open';
+        $data[ 'ping_status' ] = 'open';
+    }
+
+    return $data;
+}
+add_filter( 'wp_insert_post_data', 'default_comments_on' );
+
 create_widget( 'Front Page Left', 'front-left', 'Displays on left of Homepage' );
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of Homepage' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on right of Homepage' );

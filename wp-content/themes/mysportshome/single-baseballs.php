@@ -29,13 +29,20 @@
           </p>
 
         </div>
-        <div class="col-sm-4">
-          <h1><?php the_title(); ?></h1>
+        <div class="col-sm-4 reading-col">
+          <h2><?php the_title(); ?></h2>
+
+          <hr>
 
           <?php the_content(); ?>
 
           <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>">View Final Ball <span class="glyphicon glyphicon-arrow-right"></span></a>
           </p>
+
+          <hr>
+
+          <?php comments_template(); ?>
+
         </div>
 
       <?php endwhile; else: ?>

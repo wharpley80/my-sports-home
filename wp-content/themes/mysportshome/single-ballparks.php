@@ -94,9 +94,12 @@
 
           <?php the_content(); ?>
           
-          <hr>
           <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>">View Final Park <span class="glyphicon glyphicon-arrow-right"></span></a>
           </p>
+          <hr>
+
+          <?php comments_template(); ?>
+
         </div>
         </div>
           <div class="row photo-row hidden-sm hidden-md hidden-lg">
