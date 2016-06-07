@@ -11,13 +11,13 @@ Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, 
 
 body {
 	padding-top: 50px;
-	background-color: #000;
+	background-color: #fff;
 }
 
 h1,
 h2,
 h3 {
-	color: #fff;
+	color: #000;
 }
 
 @media (max-width:768px) {
@@ -46,13 +46,14 @@ h3 {
 }
 
 p {
-	color: #fff;
+	color: #000;
 	font-size: 1em;
 	line-height: 1.6em;
 }
 
 a {
 	color: #a3adaf;
+	color: #433c85;
 }
 
 a:hover {
@@ -112,6 +113,15 @@ ul {
 
 .admin-bar .navbar-fixed-top {
 	margin-top: 30px;
+	background-color: #433c85;
+}
+
+.admin-bar .navbar-fixed-top a {
+	color: #fff;
+}
+
+.admin-bar .navbar-fixed-top a:hover {
+	color: #a3adaf;
 }
 
 @media (min-width:768px) {
@@ -163,21 +173,19 @@ ul {
 *****************************/
 
 .sidebar {
-	height: 530px;
+	height: 570px;
 	margin-top: 30px;
-	background-color: #433c85;
-	color: #fff;
 }
 
 #home-side {
 	height: 600px;
-	background: linear-gradient(
-      rgba(255, 255, 255, 0.90), 
-      rgba(255, 255, 255, 0.90)
+	/*background: linear-gradient(
+      rgba(67, 60, 133, 0.85), 
+      rgba(67, 60, 133, 0.85)
     ),
 	url(http://www.mysportshome.com/wp-content/uploads/2016/05/laces.jpg);
 	background-size: 100% 100%;
-	color: #000;
+	color: #000;*/
 }
 
 #home-side ul {
@@ -269,6 +277,22 @@ ul {
     ),
 	url(http://localhost/my-sports-home/wp-content/uploads/2016/05/story.jpg) no-repeat;
   background-size: 100% 100%;
+}
+
+#searchform {
+	margin-top: 20px;
+}
+
+.widget p, h3 {
+	color: #fff;
+}
+
+.module-heading {
+	color: #000;
+}
+
+.screen-reader-text {
+	color: #000;
 }
 
 /*****************************
@@ -393,7 +417,7 @@ article.post {
 
 .carousel-img {
 	width: 100%;
-	max-height: 450px;
+	max-height: 500px;
 }
 
 .extra-photos img {
